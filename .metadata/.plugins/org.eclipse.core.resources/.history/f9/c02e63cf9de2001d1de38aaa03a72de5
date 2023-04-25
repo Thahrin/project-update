@@ -1,0 +1,5 @@
+package com.example.projectdemo.dao;
+
+public interface ProjectRepository {
+
+}

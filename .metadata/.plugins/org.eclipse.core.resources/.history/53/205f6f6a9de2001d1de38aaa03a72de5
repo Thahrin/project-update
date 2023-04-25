@@ -1,0 +1,5 @@
+package com.example.projectdemo.model;
+
+public class Project {
+
+}
