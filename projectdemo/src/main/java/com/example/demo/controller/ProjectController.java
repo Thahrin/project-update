@@ -31,10 +31,10 @@ public class ProjectController {@Autowired
 		return proService.saveProjects(u);
 	}
 	
-	@PutMapping(value="/updateProjects")
-	public Project updateStudents(@RequestBody Project u)
+	@PutMapping(value="/updateProjects/{no}")
+	public Project updateProjects(@RequestBody Project u,@PathVariable int no)
 	{
-		return proService.saveProjects(u);
+		return proService.updateProjects(u,no);
 	}
 	
 	@DeleteMapping(value="/deleteProjects/{rno}")

@@ -50,5 +50,9 @@ public class StudentController {
 	{
 		return studService.getStudents(regno);
 	}
-	
+	@GetMapping("/sortStudents/{field}")
+	public List<Student>sortStudents(@PathVariable String field)
+	{
+		return studService.sortStudents(field);
+	}
 }
